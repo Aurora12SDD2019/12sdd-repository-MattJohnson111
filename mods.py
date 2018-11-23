@@ -1,13 +1,14 @@
-""" Project name.
+""" Modules of Standard algorithms function for the SDD course.
 
-Description
+This script will contain functions corresponding to all of the standard
+algorithms listed in the course specs for the HSC SDD course
 """
 
-__author__ = "Your Name"
+__author__ = "Matthew Johson"
 __license__ = "GPL"
 __version__ = "1.0.1"
-__email__ = "your.address@education.nsw.com.au"
-__status__ = "Prototype, Development or Production"
+__email__ = "matthew.johnson111@education.nsw.com.au"
+__status__ = "Prototype"
 
 """ revision notes:
 
@@ -54,5 +55,30 @@ class SampleClass(object):
     def public_method(self):
         """Performs operation blah."""
 
+def loadArray():
+    """load data into an array.
+
+    It prompts the user to enter data and
+    loads that data into and array.
+
+    
+    Args:
+
+    Returns:
+
+    Raises:
+        
+    """
+    thisArray = []
+    i = 0
+    dataValue = input("please entre anything, or 'xxx' to quit:  ")
+
+    while dataValue != "xxx":
+        thisArray.append(dataValue)
+        i = i + 1
+        dataValue = input("please entre anything, or 'xxx' to quit:  ")
+
+    numElements = i
+    print("There are", str(numElements), "items loaded into the array")
 
 
